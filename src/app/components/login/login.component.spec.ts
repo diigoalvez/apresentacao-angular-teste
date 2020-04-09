@@ -20,7 +20,10 @@ describe('LoginComponent', () => {
 
 
   afterEach(() => {
+    mockedService = null;
+    realService = null;
     component = null;
+    componentMockingService = null;
   });
 
   it('should create', () => {

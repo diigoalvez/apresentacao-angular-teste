@@ -24,8 +24,13 @@ describe('MyPipePipe', () => {
     expect(pipeInstance).toBeTruthy();
   });
 
-  it('should transform the input', () => {
+  it('should transform the input "1" to 1', () => {
     expect(pipeInstance.transform('1')).toEqual(1);
+  });
+
+
+  it('should receive "2" and tranform to null', () => {
+    expect(pipeInstance.transform('2')).toBeNull();
   });
 
 });

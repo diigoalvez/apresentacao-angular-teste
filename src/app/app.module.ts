@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyComponentComponent } from './components/my-component/my-component.component';
 import { MyPipePipe } from './pipes/my-pipe/my-pipe.pipe';
-import { LoginComponent } from './components/login-component/login/login.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
