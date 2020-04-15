@@ -20,12 +20,12 @@ describe('MyServiceService', () => {
     expect(serviceInstance).toBeTruthy();
   });
 
-  it('should return true from checkToken when there is a token', () => {
+  it('should return true from isAuthenticated when there is a token', () => {
     localStorage.setItem('token_apresentacao', '123');
     expect(serviceInstance.isAuthenticated()).toBeTruthy();
   });
 
-  it('should return false from checkToken when there is not a token', () => {
+  it('should return false from isAuthenticated when there is not a token', () => {
     expect(serviceInstance.isAuthenticated()).toBeFalsy();
   });
 });

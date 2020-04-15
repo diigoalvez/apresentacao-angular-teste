@@ -3,7 +3,6 @@ import { TestBed } from '@angular/core/testing';
 
 let pipeInstance: MyPipePipe;
 
-
 describe('MyPipePipe', () => {
 
   beforeEach(() => {
