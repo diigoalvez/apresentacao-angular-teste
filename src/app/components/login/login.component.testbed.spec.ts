@@ -42,13 +42,13 @@ describe('Login Using TestBed', () => {
     it('loginButton should be hidden when user is authenticated', () => {
         spyOn(service, 'isAuthenticated').and.returnValue(true);
         fixture.detectChanges();
-        expect(element.nativeElement.getAttribute('hidden')).toBeNull();
+        expect(element.nativeElement.getAttribute('hidden')).toEqual('');
     });
 
     it('loginButton should display when user is not authenticated', () => {
         spyOn(service, 'isAuthenticated').and.returnValue(false);
         fixture.detectChanges();
-        expect(element.nativeElement.getAttribute('hidden')).toBe('');
+        expect(element.nativeElement.getAttribute('hidden')).toBeNull();
     });
 
 });
